@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 min-h-screen;
+  font-family: 'Inter', sans-serif;
+}
+
+.code-block {
+  @apply font-mono text-sm bg-slate-900 text-emerald-100 rounded-xl p-6 shadow-lg border border-slate-800;
+}
+
+.section-card {
+  @apply bg-slate-900/70 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 shadow-xl;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  background-color: theme('colors.primary');
+}
